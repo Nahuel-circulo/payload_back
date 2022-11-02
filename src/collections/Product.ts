@@ -27,13 +27,22 @@ const Producto: CollectionConfig = {
       type: 'text',
     },
     {
-      name: 'price',
-      type: 'text',
-    },
-    {
       name:'image',
       type:'upload',
       relationTo:'media'
+    },
+    {
+      name:'delivery',
+      type:'checkbox',
+      label:'Es apto para delivery?',
+      defaultValue:false
+    }
+    ,
+    {
+      name:'categoria',
+      type:'relationship',
+      hasMany:false,
+      relationTo:'categoria'
     }
   ],
 }

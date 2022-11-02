@@ -8,9 +8,12 @@ import Mesa from './collections/Tables';
 import Usuario from './collections/Usuario';
 import Reservation from './collections/Reservation';
 import Opinion from './collections/Opinion';
+import Categoria from './collections/Categoria';
 
+const url ='http://localhost:3000'
+// const url ='https://payloadback-production.up.railway.app'
 export default buildConfig({
-  serverURL: 'https://payloadback-production.up.railway.app',
+  serverURL: url,
   admin: {
     user: Users.slug,
   },
@@ -21,7 +24,8 @@ export default buildConfig({
     Mesa,
     Usuario,
     Reservation,
-    Opinion
+    Opinion,
+    Categoria
   ],
   typescript: {
     outputFile: path.resolve(__dirname, 'payload-types.ts'),
