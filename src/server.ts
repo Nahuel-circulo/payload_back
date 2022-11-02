@@ -24,5 +24,5 @@ payload.init({
 })
 
 // Add your own express routes here
-const port = process.env.PORT || 0
+const port = process.env.PORT || 3000
 app.listen(port);

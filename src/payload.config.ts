@@ -10,7 +10,7 @@ import Reservation from './collections/Reservation';
 import Opinion from './collections/Opinion';
 
 export default buildConfig({
-  serverURL: 'https://payloadback-production.up.railway.app/',
+  serverURL: 'http://localhost:3000',
   admin: {
     user: Users.slug,
   },
