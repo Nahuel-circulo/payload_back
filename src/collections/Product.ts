@@ -36,15 +36,14 @@ const Producto: CollectionConfig = {
       type:'checkbox',
       label:'Es apto para delivery?',
       defaultValue:false
-    }
-    ,
+    },
     {
       name:'categoria',
       type:'relationship',
       hasMany:false,
       relationTo:'categoria'
     }
-  ],
+  ]
 }
 
 export default Producto;

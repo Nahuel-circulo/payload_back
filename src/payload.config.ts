@@ -9,9 +9,12 @@ import Usuario from './collections/Usuario';
 import Reservation from './collections/Reservation';
 import Opinion from './collections/Opinion';
 import Categoria from './collections/Categoria';
+import Pedido from './collections/Pedido';
+import Factura from './collections/Factura';
+import MetotoP from './collections/MetodoP';
 
-const url ='http://localhost:3000'
-// const url ='https://payloadback-production.up.railway.app'
+//const url ='http://localhost:3000'
+const url ='https://payloadback-production.up.railway.app'
 export default buildConfig({
   serverURL: url,
   admin: {
@@ -25,7 +28,10 @@ export default buildConfig({
     Usuario,
     Reservation,
     Opinion,
-    Categoria
+    Categoria,
+    Pedido,
+    Factura,
+    MetotoP
   ],
   typescript: {
     outputFile: path.resolve(__dirname, 'payload-types.ts'),
