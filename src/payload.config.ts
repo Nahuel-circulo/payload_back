@@ -12,8 +12,10 @@ import Categoria from './collections/Categoria';
 import Pedido from './collections/Pedido';
 import Factura from './collections/Factura';
 import MetotoP from './collections/MetodoP';
+import Personal from './collections/Personal';
+import Role from './collections/Role';
 
-//const url ='http://localhost:3000'
+// const url ='http://localhost:3000'
 const url ='https://payloadback-production.up.railway.app'
 export default buildConfig({
   serverURL: url,
@@ -31,7 +33,9 @@ export default buildConfig({
     Categoria,
     Pedido,
     Factura,
-    MetotoP
+    MetotoP,
+    Personal,
+    Role
   ],
   typescript: {
     outputFile: path.resolve(__dirname, 'payload-types.ts'),
