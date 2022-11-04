@@ -24,6 +24,11 @@ const Pedido: CollectionConfig = {
             type: 'relationship',
             hasMany: false,
             relationTo: 'producto'
+        },
+        {
+            name:'identificador',
+            type:'text',
+            required:true
         }
     ]
 }
