@@ -19,7 +19,7 @@ const Factura: CollectionConfig = {
             type: 'text'
         },
         {
-            name: 'metodo de pago',
+            name: 'metodo_de_pago',
             type: 'relationship',
             hasMany: false,
             relationTo: 'metodop'
