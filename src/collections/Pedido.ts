@@ -20,7 +20,7 @@ const Pedido: CollectionConfig = {
             defaultValue: 1
         },
         {
-            name: 'productos',
+            name: 'producto',
             type: 'relationship',
             hasMany: false,
             relationTo: 'producto'
