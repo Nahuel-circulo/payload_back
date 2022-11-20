@@ -15,8 +15,8 @@ import MetotoP from './collections/MetodoP';
 import Personal from './collections/Personal';
 import Role from './collections/Role';
 
-const url ='http://localhost:3000'
-// const url ='https://payloadback-production.up.railway.app'
+// const url ='http://localhost:3000'
+const url ='https://payloadback-production.up.railway.app'
 export default buildConfig({
   serverURL: url,
   admin: {
