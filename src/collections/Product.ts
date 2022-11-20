@@ -42,7 +42,13 @@ const Producto: CollectionConfig = {
       type:'relationship',
       hasMany:false,
       relationTo:'categoria'
-    }
+    },
+    {
+      name:'disponible',
+      type:'checkbox',
+      label:'disponible?',
+      defaultValue:true
+    },
   ]
 }
 
