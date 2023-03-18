@@ -14,14 +14,17 @@ import Factura from './collections/Factura';
 import MetotoP from './collections/MetodoP';
 import Personal from './collections/Personal';
 import Role from './collections/Role';
+import Persona from './collections/Personas';
+import RolesPersona from './collections/RolesPersonas';
 
-// const url ='http://localhost:3000'
-const url ='https://payloadback-production.up.railway.app'
+const url = 'http://localhost:3000'
+// const url ='https://payloadback-production.up.railway.app'
 export default buildConfig({
   serverURL: url,
   admin: {
     user: Users.slug,
   },
+
   collections: [
     Users,
     Media,
@@ -35,7 +38,9 @@ export default buildConfig({
     Factura,
     MetotoP,
     Personal,
-    Role
+    Role,
+    Persona,
+    RolesPersona
   ],
   typescript: {
     outputFile: path.resolve(__dirname, 'payload-types.ts'),
@@ -43,4 +48,5 @@ export default buildConfig({
   graphQL: {
     schemaOutputFile: path.resolve(__dirname, 'generated-schema.graphql'),
   },
+  
 });

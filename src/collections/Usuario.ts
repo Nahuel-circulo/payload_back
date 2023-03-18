@@ -1,3 +1,4 @@
+import payload from 'payload';
 import { CollectionConfig } from 'payload/types';
 
 const Usuario: CollectionConfig = {
@@ -48,6 +49,23 @@ const Usuario: CollectionConfig = {
 
     },
   ],
+  endpoints: [
+    {
+        path: '/send',
+        method: 'get',
+        handler: async (req, res, next) => {
+            
+            
+            payload.sendEmail({
+                from: 'nahuelyad@gmail.com',
+                to: 'sylvester41@ethereal.email',
+                subject: 'Prueba',
+                html:'Hola mensaje de prueba'
+            })
+            res.status(200).send('Enviado')
+        }
+    }
+],
 };
 
 export default Usuario;

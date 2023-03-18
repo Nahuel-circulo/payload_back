@@ -19,6 +19,7 @@ const Mesa: CollectionConfig = {
       type: 'number',
     }
   ],
+  
 }
 
 export default Mesa;

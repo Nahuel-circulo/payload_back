@@ -21,6 +21,18 @@ payload.init({
   onInit: () => {
     payload.logger.info(`Payload Admin URL: ${payload.getAdminURL()}`)
   },
+  email: {
+    transportOptions: {
+      host: 'smtp.ethereal.email',
+      port: 587,
+      auth: {
+        user: 'sylvester41@ethereal.email',
+        pass: 'ZV4y84fnVh3GzUgpxP'
+      }
+    },
+    fromAddress: 'sylvester41@ethereal.email',
+    fromName: 'Hello',
+  }
 })
 
 // Add your own express routes here
